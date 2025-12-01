@@ -6,12 +6,16 @@
 
 {
     "compilerOptions": {
-        "target":"es2020",
-        "module":"commonjs",
+        "target":"ES2020",
+        "module":"CommonJS",
         "strict":true,
         "esModuleInterop": true,
         "outDir": "dist",
-        "types": ["node", "mocha", "@wdio/globals/types", "chai"]
+        "types": ["node", "mocha", "webdriverio/async", "chai"],
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
     },
     "include": ["src/**/*.ts", "wdio.conf.ts"]
 }
