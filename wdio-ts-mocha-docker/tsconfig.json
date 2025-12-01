@@ -1,0 +1,17 @@
+//this file tells typescript:
+//how to compile your .ts files
+//which version of JS to output
+//where complied code should go
+//which type definitions to use (Without ths file, typescript will not worl correctly)
+
+{
+    "compilerOptions": {
+        "target":"es2020",
+        "module":"commonjs",
+        "strict":true,
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "types": ["node", "mocha", "@wdio/globals/types", "chai"]
+    },
+    "include": ["src/**/*.ts", "wdio.conf.ts"]
+}

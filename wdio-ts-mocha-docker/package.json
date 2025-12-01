@@ -1,0 +1,23 @@
+{"name":"wdio-ts-mocha-docker",
+"version":"1.0.0",
+"description":"wdio-ts-mocha-docker",
+"scripts":{
+"test":"wdio run ./wdio.conf.ts"
+},
+"dependencies":{
+"@wdio/cli":"^8.16.0",
+"@wdio/mocha-framework":"^8.16.0",
+"@wdio/spec-reporter":"^8.16.0",
+"@wdio/sync":"^8.16.0",
+"chromedriver":"^122.0.6",
+"typescript":"^5.1.6"
+},
+"devDependencies": {
+    "ts-node":"^10.9.1",
+    "@types/mocha": "10.0.10",
+    "@types/node": "^20.11.7",
+    "@wdio/types": "^8.16.0",
+    "chai": "^4.3.7",
+    "@types/chai": "^4.3.5"
+}
+}
